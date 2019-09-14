@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header section {
+  position: relative;
+}
+header section .banner-list {
+  width: 100%;
+  position: relative;
+  height: 625px;
+}
+header section .banner-list .banner-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header section .banner-list .banner-item:nth-child(1) {
+  background: url("../imgs/banner-imgs/banner-1-new.png") no-repeat;
+}
+header section .banner-list .banner-item:nth-child(2) {
+  background: url("../imgs/banner-imgs/banner-2-new.png");
+}
+header section .banner-list .banner-item:nth-child(3) {
+  background: url("../imgs/banner-imgs/banner-3-new.png");
+}
+header section .banner-list .banner-item:nth-child(4) {
+  background: url("../imgs/banner-imgs/banner-4-new.png");
+}
+header section .banner-list .banner-item.active {
+  opacity: 1;
+  z-index: 10;
+}
+header section .banner-oprate {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 50px;
+  top: calc(50% - 25px);
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgba(193, 220, 234, 0.5);
+  cursor: pointer;
+  z-index: 11;
+}
+header section .banner-oprate.pre {
+  left: 10px;
+}
+header section .banner-oprate.next {
+  right: 10px;
+}
+header section .dottes {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 11;
+}
+header section .dottes span {
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header section .dottes span.active {
+  background: red;
+}
+
+/*# sourceMappingURL=banner1.css.map */
