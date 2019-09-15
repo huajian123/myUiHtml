@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+
+  section {
+    input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+    }
+
+    #r1:checked ~.banner-list{
+      margin-left: 0;
+      transition: all ease 0.5s;
+    }
+
+    #r2:checked ~.banner-list{
+      margin-left: -100%;
+      transition: all ease 0.5s;
+    }
+
+    #r3:checked ~.banner-list{
+      margin-left: -200%;
+      transition: all ease 0.5s;
+    }
+
+    #r4:checked ~.banner-list{
+      margin-left: -300%;
+      transition: all ease 0.5s;
+    }
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .banner-list {
+      width: 400%;
+      height: 100%;
+      position: relative;
+
+      .banner-item {
+        width: 25%;
+        height: 100%;
+        float: left;
+
+        &:nth-child(1) {
+          background: url('../imgs/banner-imgs/banner-1-new.png') no-repeat;
+        }
+
+        &:nth-child(2) {
+          background: url('../imgs/banner-imgs/banner-2-new.png');
+        }
+
+        &:nth-child(3) {
+          background: url('../imgs/banner-imgs/banner-3-new.png');
+        }
+
+        &:nth-child(4) {
+          background: url('../imgs/banner-imgs/banner-4-new.png');
+        }
+      }
+    }
+
+    .banner-oprate {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 50px;
+      top: calc(50% - 25px);
+      border-radius: 50%;
+      user-select: none;
+      background-color: rgba(193, 220, 234, 0.5);
+      // background-color: red;
+      cursor: pointer;
+      z-index: 11;
+
+      &.pre {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+    }
+
+    .dottes{
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      z-index: 11;
+      label{
+        user-select: none;
+        cursor: pointer;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: yellow;
+        border-radius: 50%;
+        margin-right: 10px;
+        &.active{
+          background: red;
+        }
+      }
+    }
+  }
+}
