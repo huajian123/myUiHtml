@@ -7,8 +7,14 @@ var goPreBtn = document.getElementsByClassName("pre");
 // 下一张按钮对象
 var goNexBtn = document.getElementsByClassName("next");
 var index = 0;// index 表示第几张图片展示
+
+var timeOutFlag = null;
+
 // 点击下一张按钮
 goNexBtn[0].addEventListener('click', function () {
+    if (timeOutFlag != null) {
+        return
+    }
     changeIndex("next");
     var marginLeft = parseFloat(getElementStyle(bannerList[0], 'marginLeft'));
     var width = parseFloat(getElementStyle(bannerItems[0], 'width'));
@@ -16,10 +22,18 @@ goNexBtn[0].addEventListener('click', function () {
     if (-width * bannerItems.length === parseFloat(bannerList[0].style.marginLeft)) {
         bannerList[0].style.marginLeft = "0px"
     }
+    timeOutFlag = setTimeout(function () {
+        timeOutFlag = null
+    }, 300)
+
+
 });
 
 // 点击上一张按钮
 goPreBtn[0].addEventListener('click', function () {
+    if (timeOutFlag != null) {
+        return
+    }
     changeIndex("pre");
     var marginLeft = parseFloat(getElementStyle(bannerList[0], 'marginLeft'));
     var width = parseFloat(getElementStyle(bannerItems[0], 'width'));
@@ -29,6 +43,9 @@ goPreBtn[0].addEventListener('click', function () {
     } else {
         bannerList[0].style.marginLeft = width + marginLeft + 'px';
     }
+    timeOutFlag = setTimeout(function () {
+        timeOutFlag = null
+    }, 300)
 });
 
 changeIndex = function (type) {
