@@ -60,5 +60,24 @@ header section .banner-oprate.pre {
 header section .banner-oprate.next {
   right: 10px;
 }
+header section .dottes {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 11;
+}
+header section .dottes span {
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  border: 2px solid #ffffff;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header section .dottes span.active {
+  background: #ffffff;
+}
 
 /*# sourceMappingURL=banner5.css.map */

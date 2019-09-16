@@ -65,5 +65,25 @@ header {
         right: 10px;
       }
     }
+
+    .dottes{
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      z-index: 11;
+      span{
+        user-select: none;
+        cursor: pointer;
+        display: inline-block;
+        width: 15px;
+        border: 2px solid #ffffff;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 10px;
+        &.active{
+          background: #ffffff;
+        }
+      }
+    }
   }
 }
