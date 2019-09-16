@@ -24,6 +24,7 @@ header section .banner-list {
   transition: all 0.3s;
 }
 header section .banner-list .banner-item {
+  user-select: none;
   width: 25%;
   height: 100%;
   float: left;
@@ -61,6 +62,7 @@ header section .banner-oprate.next {
   right: 10px;
 }
 header section .dottes {
+  user-select: none;
   position: absolute;
   bottom: 30px;
   right: 40px;

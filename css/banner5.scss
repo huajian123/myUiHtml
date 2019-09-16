@@ -22,7 +22,7 @@ header {
       width: 400%;
       transition: all 0.3s;
       .banner-item{
-
+        user-select: none;
         width: 25%;
         height: 100%;
         float: left;
@@ -67,6 +67,7 @@ header {
     }
 
     .dottes{
+      user-select: none;
       position: absolute;
       bottom: 30px;
       right: 40px;
