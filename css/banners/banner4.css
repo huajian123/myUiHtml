@@ -15,31 +15,50 @@ header {
 header section {
   width: 100%;
   height: 100%;
-  position: relative;
   overflow: hidden;
+  position: relative;
+}
+header section input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+header section #r1:checked ~ .banner-list {
+  margin-left: 0;
+  transition: all ease 0.5s;
+}
+header section #r2:checked ~ .banner-list {
+  margin-left: -100%;
+  transition: all ease 0.5s;
+}
+header section #r3:checked ~ .banner-list {
+  margin-left: -200%;
+  transition: all ease 0.5s;
+}
+header section #r4:checked ~ .banner-list {
+  margin-left: -300%;
+  transition: all ease 0.5s;
 }
 header section .banner-list {
-  height: 100%;
   width: 400%;
-  transition: all 0.3s;
+  height: 100%;
+  position: relative;
 }
 header section .banner-list .banner-item {
-  user-select: none;
   width: 25%;
   height: 100%;
   float: left;
 }
 header section .banner-list .banner-item:nth-child(1) {
-  background: url("../imgs/banner-imgs/banner-1-new.png");
+  background: url("../../imgs/banner-imgs/banner-1-new.png") no-repeat;
 }
 header section .banner-list .banner-item:nth-child(2) {
-  background: url("../imgs/banner-imgs/banner-2-new.png");
+  background: url("../../imgs/banner-imgs/banner-2-new.png");
 }
 header section .banner-list .banner-item:nth-child(3) {
-  background: url("../imgs/banner-imgs/banner-3-new.png");
+  background: url("../../imgs/banner-imgs/banner-3-new.png");
 }
 header section .banner-list .banner-item:nth-child(4) {
-  background: url("../imgs/banner-imgs/banner-4-new.png");
+  background: url("../../imgs/banner-imgs/banner-4-new.png");
 }
 header section .banner-oprate {
   position: absolute;
@@ -62,24 +81,23 @@ header section .banner-oprate.next {
   right: 10px;
 }
 header section .dottes {
-  user-select: none;
   position: absolute;
   bottom: 30px;
   right: 40px;
   z-index: 11;
 }
-header section .dottes span {
+header section .dottes label {
   user-select: none;
   cursor: pointer;
   display: inline-block;
   width: 15px;
-  border: 2px solid #ffffff;
   height: 15px;
+  background: yellow;
   border-radius: 50%;
   margin-right: 10px;
 }
-header section .dottes span.active {
-  background: #ffffff;
+header section .dottes label.active {
+  background: red;
 }
 
-/*# sourceMappingURL=banner5.css.map */
+/*# sourceMappingURL=banner4.css.map */

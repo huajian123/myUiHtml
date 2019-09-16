@@ -29,16 +29,16 @@ header section .banner-list .banner-item {
   transition: all 0.3s;
 }
 header section .banner-list .banner-item:nth-child(1) {
-  background: url("../imgs/banner-imgs/banner-1-new.png") no-repeat;
+  background: url("../../imgs/banner-imgs/banner-1-new.png") no-repeat;
 }
 header section .banner-list .banner-item:nth-child(2) {
-  background: url("../imgs/banner-imgs/banner-2-new.png");
+  background: url("../../imgs/banner-imgs/banner-2-new.png");
 }
 header section .banner-list .banner-item:nth-child(3) {
-  background: url("../imgs/banner-imgs/banner-3-new.png");
+  background: url("../../imgs/banner-imgs/banner-3-new.png");
 }
 header section .banner-list .banner-item:nth-child(4) {
-  background: url("../imgs/banner-imgs/banner-4-new.png");
+  background: url("../../imgs/banner-imgs/banner-4-new.png");
 }
 header section .banner-list .banner-item.active {
   opacity: 1;
