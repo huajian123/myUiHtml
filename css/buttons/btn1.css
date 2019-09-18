@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+a:hover::after {
+  width: 200%;
+}
+
+a::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  transform: skew(45deg);
+  background: red;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=btn1.css.map */
