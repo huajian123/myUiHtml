@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  height: 90px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header section {
+  height: 100%;
+  padding: 0 50px;
+}
+header section .nav-left {
+  float: left;
+  height: 100%;
+  width: 180px;
+}
+header section .nav-left .navbar-logo {
+  display: inline-block;
+  background: url("../../../imgs/byton-imgs/header-logo-dark.svg") no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+header section .nav-right {
+  float: right;
+  width: 294px;
+  height: 100%;
+  text-align: right;
+  line-height: 90px;
+}
+header section .nav-right span:last-child {
+  margin-left: 15px;
+}
+header section .nav-right span {
+  font-size: 20px;
+}
+header section .nav-main {
+  text-align: center;
+  line-height: 90px;
+}
+header section .nav-main ul li {
+  color: #6c6c6f;
+  margin: 0 15px;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  font-size: 12px;
+}
+
+main .banner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: url("../../../imgs/byton-imgs/banner1.jpg") no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */
