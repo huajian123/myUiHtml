@@ -13,6 +13,7 @@ ul, li {
 }
 
 header {
+  z-index: 2;
   height: 90px;
   background: transparent;
   position: fixed;
@@ -24,7 +25,8 @@ header {
   section {
     height: 100%;
     padding: 0 50px;
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, .2);
+
     .nav-left {
       float: left;
       height: 100%;
@@ -71,7 +73,6 @@ header {
         }
       }
     }
-
   }
 }
 
@@ -79,10 +80,11 @@ main {
   .banner {
     height: calc(100vh);
     width: 100%;
-    background: url("../../../imgs/byton-imgs/banner1.jpg") no-repeat 100% 50% ;
+    background: url("../../../imgs/byton-imgs/banner1.jpg") no-repeat 100% 50%;
     background-size: cover;
     position: relative;
-    .banner-content{
+
+    .banner-content {
       position: absolute;
       width: 900px;
       text-align: center;
@@ -90,16 +92,133 @@ main {
       left: 50%;
       transform: translateX(-50%);
       color: #ffffff;
-      .banner-title{
+
+      .banner-title {
         letter-spacing: 2px;
         font-size: 30px;
         font-weight: 700;
       }
-      .banner-text{
+
+      .banner-text {
         font-weight: 400;
         margin-top: 26px;
         font-size: 22px;
       }
     }
   }
+
+  .product-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      flex-basis: 50%;
+      height: 500px;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      // transition: all 03s;
+      .card-content {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 4px;
+      }
+      .card-content:hover {
+        background-size: 110% 110%;
+      }
+      .card-text {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        h1 {
+          font-size: 33px;
+          font-weight: 400;
+        }
+
+        h4 {
+          margin-top: 5px;
+          font-weight: bold;
+        }
+
+        h5 {
+          margin-top: 5px;
+        }
+      }
+     /* & .card-content:nth-child(1){
+        background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+        // background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-origin: content-box;
+        background-position: center;
+        color: #75787B;
+      }
+      & .card-content:nth-child(2){
+        background: url("../../../imgs/byton-imgs/card2.jpg") no-repeat;
+        // background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-origin: content-box;
+        background-position: center;
+        color: #75787B;
+      }
+      & .card-content:nth-child(3){
+        background: url("../../../imgs/byton-imgs/card3.jpg") no-repeat;
+        // background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-origin: content-box;
+        background-position: center;
+        color: #75787B;
+      }
+      & .card-content:nth-child(4){
+        background: url("../../../imgs/byton-imgs/card4.png") no-repeat;
+        // background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-origin: content-box;
+        background-position: center;
+        color: #75787B;
+      }*/
+    }
+
+
+  }
+
+
+}
+.card-content:nth-child(1) {
+  background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-origin: content-box;
+  background-position: center;
+  color: #ffffff;
+}
+
+.card-content:nth-child(2) {
+  background: url("../../../imgs/byton-imgs/card2.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-origin: content-box;
+  background-position: center;
+  color: #ffffff;
+}
+
+.card-content:nth-child(3) {
+  background: url("../../../imgs/byton-imgs/card3.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-origin: content-box;
+  background-position: center;
+  color: #ffffff;
+}
+
+.card-content:nth-child(4) {
+  background: url("../../../imgs/byton-imgs/card4.png") no-repeat,
+  url("../../../imgs/byton-imgs/card4-bg.png") no-repeat;
+  background-size: 100% 100%, 100% 100%;
+  background-origin: content-box, content-box;
+  background-position: center;
+  color: #ffffff;
 }
