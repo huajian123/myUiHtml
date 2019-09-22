@@ -143,12 +143,13 @@ main {
           left: 0;
         }
 
-        &:hover{
-          & img{
+        &:hover {
+          & img {
             transform: scale(1.1);
           }
-          & img.app-bg{
-            transform: translate(2%,20%) scale(1.1);
+
+          & img.app-bg {
+            transform: translate(2%, 20%) scale(1.1);
           }
         }
 
@@ -174,6 +175,31 @@ main {
             margin-top: 5px;
           }
         }
+      }
+    }
+  }
+
+  .adv {
+    width: 100%;
+    transform: translateY(100px);
+    padding: 4px 0 4px 4px;
+    transition: all .3s;
+    &.play {
+      transform: translateY(0);
+    }
+
+    .adv-content {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
       }
     }
   }

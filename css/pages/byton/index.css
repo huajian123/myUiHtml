@@ -150,5 +150,26 @@ main .product-cards .card .card-content .card-text h4 {
 main .product-cards .card .card-content .card-text h5 {
   margin-top: 5px;
 }
+main .adv {
+  width: 100%;
+  transform: translateY(100px);
+  padding: 4px 0 4px 4px;
+  transition: all 0.3s;
+}
+main .adv.play {
+  transform: translateY(0);
+}
+main .adv .adv-content {
+  width: 100%;
+  overflow: hidden;
+}
+main .adv .adv-content img {
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+main .adv .adv-content:hover img {
+  transform: scale(1.1);
+}
 
 /*# sourceMappingURL=index.css.map */
