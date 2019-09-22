@@ -114,83 +114,65 @@ main {
 
     .card {
       flex-basis: 50%;
-      height: 500px;
       position: relative;
       text-align: center;
       cursor: pointer;
       overflow: hidden;
+
       .card-content {
         width: 100%;
         height: 100%;
         overflow: hidden;
-        margin: 4px;
+        margin: 2px 4px;
         color: #75787B;
-        transition: all 4s;
+        position: relative;
 
-        &.bg1 {
-          background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
-          background-size: 100% 100%;
-          background-origin: content-box;
-          background-position: center;
+        &.bg4, &.bg2, &.bg3 {
+          color: #ffffff !important;
         }
 
-        &.bg2 {
-          background: url("../../../imgs/byton-imgs/card2.jpg") no-repeat;
-          background-size: 100% 100%;
-          background-origin: content-box;
-          background-position: center;
-          color: #ffffff;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 1s;
         }
 
-        &.bg3 {
-          background: url("../../../imgs/byton-imgs/card3.jpg") no-repeat;
-          background-size: 100% 100%;
-          background-origin: content-box;
-          background-position: center;
-          color: #ffffff;
+        img.phone-card-img {
+          position: absolute;
+          top: 0;
+          left: 0;
         }
 
-        &.bg4 {
-          background: url("../../../imgs/byton-imgs/card4.png") no-repeat,
-          url("../../../imgs/byton-imgs/app-bg.png") no-repeat,
-          url("../../../imgs/byton-imgs/card4-bg.png") no-repeat;
-
-          background-size: 100% 100%, 100% 110%, 100% 100%;
-          background-origin: content-box, content-box, content-box;
-          background-position: center,  50% 110%, center;
-          color: #ffffff;
-        }
-      }
-
-      .card-content:not(.bg4):hover {
-         background-size: 110% 110%;
-      }
-
-      .card-content.bg4:hover {
-        background-position: center, 50% 110%, center;
-        background-size: 110% 110%, 110% 78%, 100% 100%;
-      }
-
-      .card-text {
-        position: absolute;
-        width: 100%;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-
-        h1 {
-          font-size: 33px;
-          font-weight: 400;
+        &:hover{
+          & img{
+            transform: scale(1.1);
+          }
+          & img.app-bg{
+            transform: translate(2%,20%) scale(1.1);
+          }
         }
 
-        h4 {
-          margin-top: 5px;
-          font-weight: bold;
-        }
+        .card-text {
+          position: absolute;
+          width: 100%;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 10;
 
-        h5 {
-          margin-top: 5px;
+          h1 {
+            font-size: 33px;
+            font-weight: 400;
+          }
+
+          h4 {
+            margin-top: 5px;
+            font-weight: bold;
+          }
+
+          h5 {
+            margin-top: 5px;
+          }
         }
       }
     }

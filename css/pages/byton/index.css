@@ -99,7 +99,6 @@ main .product-cards {
 }
 main .product-cards .card {
   flex-basis: 50%;
-  height: 500px;
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -109,60 +108,46 @@ main .product-cards .card .card-content {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin: 4px;
+  margin: 2px 4px;
   color: #75787B;
-  transition: all 4s;
+  position: relative;
 }
-main .product-cards .card .card-content.bg1 {
-  background: url("../../../imgs/byton-imgs/card1.jpg") no-repeat;
-  background-size: 100% 100%;
-  background-origin: content-box;
-  background-position: center;
+main .product-cards .card .card-content.bg4, main .product-cards .card .card-content.bg2, main .product-cards .card .card-content.bg3 {
+  color: #ffffff !important;
 }
-main .product-cards .card .card-content.bg2 {
-  background: url("../../../imgs/byton-imgs/card2.jpg") no-repeat;
-  background-size: 100% 100%;
-  background-origin: content-box;
-  background-position: center;
-  color: #ffffff;
+main .product-cards .card .card-content img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
 }
-main .product-cards .card .card-content.bg3 {
-  background: url("../../../imgs/byton-imgs/card3.jpg") no-repeat;
-  background-size: 100% 100%;
-  background-origin: content-box;
-  background-position: center;
-  color: #ffffff;
+main .product-cards .card .card-content img.phone-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-main .product-cards .card .card-content.bg4 {
-  background: url("../../../imgs/byton-imgs/card4.png") no-repeat, url("../../../imgs/byton-imgs/app-bg.png") no-repeat, url("../../../imgs/byton-imgs/card4-bg.png") no-repeat;
-  background-size: 100% 100%, 100% 110%, 100% 100%;
-  background-origin: content-box, content-box, content-box;
-  background-position: center, 50% 110%, center;
-  color: #ffffff;
+main .product-cards .card .card-content:hover img {
+  transform: scale(1.1);
 }
-main .product-cards .card .card-content:not(.bg4):hover {
-  background-size: 110% 110%;
+main .product-cards .card .card-content:hover img.app-bg {
+  transform: translate(2%, 20%) scale(1.1);
 }
-main .product-cards .card .card-content.bg4:hover {
-  background-position: center, 50% 110%, center;
-  background-size: 110% 110%, 110% 78%, 100% 100%;
-}
-main .product-cards .card .card-text {
+main .product-cards .card .card-content .card-text {
   position: absolute;
   width: 100%;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
-main .product-cards .card .card-text h1 {
+main .product-cards .card .card-content .card-text h1 {
   font-size: 33px;
   font-weight: 400;
 }
-main .product-cards .card .card-text h4 {
+main .product-cards .card .card-content .card-text h4 {
   margin-top: 5px;
   font-weight: bold;
 }
-main .product-cards .card .card-text h5 {
+main .product-cards .card .card-content .card-text h5 {
   margin-top: 5px;
 }
 
