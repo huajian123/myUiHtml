@@ -21,12 +21,12 @@ header {
   left: 0;
   width: 100%;
   color: #ffffff;
-  // background: url("../../../imgs/byton-imgs/header-logo-dark.svg") no-repeat;
+  user-select: none;
   section {
     height: 100%;
     padding: 0 50px;
     background: rgba(0, 0, 0, .2);
-
+    transition: all .2s;
     .nav-left {
       float: left;
       height: 100%;

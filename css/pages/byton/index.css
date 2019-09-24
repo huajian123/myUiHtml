@@ -21,11 +21,13 @@ header {
   left: 0;
   width: 100%;
   color: #ffffff;
+  user-select: none;
 }
 header section {
   height: 100%;
   padding: 0 50px;
   background: rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
 }
 header section .nav-left {
   float: left;
