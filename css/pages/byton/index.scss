@@ -43,7 +43,7 @@ header {
 
     .nav-right {
       float: right;
-      width: 294px;
+      width: 75px;
       height: 100%;
       text-align: right;
       line-height: 90px;
@@ -86,12 +86,12 @@ main {
 
     .banner-content {
       position: absolute;
-      width: 900px;
       text-align: center;
       top: 15%;
       left: 50%;
       transform: translateX(-50%);
       color: #ffffff;
+      width: 100%;
 
       .banner-title {
         letter-spacing: 2px;
@@ -102,7 +102,7 @@ main {
       .banner-text {
         font-weight: 400;
         margin-top: 26px;
-        font-size: 22px;
+        font-size: 18px;
       }
     }
   }
