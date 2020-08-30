@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input{
+  background:none;
+  outline:none;
+  border:none;
+}
+input:focus{
+  border:none;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  opacity: .8;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  opacity: .8;
+  font-size: 12px;
+}
+
+:-moz-placeholder { /* Firefox 19+ */
+  opacity: .8;
+  font-size: 12px;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  opacity: .8;
+  font-size: 12px;
+}
+
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: url(../../../imgs/lizong/login-bg.png) no-repeat;
+  background-size: 100% 100%;
+  main{
+    p{
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 55px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    section{
+      display: flex;
+      margin-top: 7vh;
+      justify-content: center;
+      .left-img{
+        background: url(../../../imgs/lizong/round.png) no-repeat;
+        width: 24vw;
+        height: 40vh;
+        background-size: 100% 100%;
+        position: relative;
+        &::after{
+          content: " ";
+          background: url(../../../imgs/lizong/round.png) no-repeat;
+          width: 24vw;
+          height: 40vh;
+          position: absolute;
+          top: 163px;
+          background-size: 100% 100%;
+          opacity:0.2
+        }
+      }
+      .mid-img{
+        background: url(../../../imgs/lizong/mid-img.png) no-repeat;
+        background-size: 100% 100%;
+        width:30vw ;
+        height: 74px;
+      }
+
+
+      .right-img{
+        background: url(../../../imgs/lizong/login-form-bg.png) no-repeat;
+        background-size: 100% 100%;
+        width: 35vw;
+        height: 50vh;
+        margin-top: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-title{
+          position: absolute;
+          top: 12px;
+          left: 26px;
+          color: white;
+        }
+        .form-input{
+          background: url(../../../imgs/lizong/input-bg.png) no-repeat;
+          background-size: 100% 100%;
+          height: 35px;
+          width: 25vw;
+          padding-left: 10px;
+        }
+        .password-wrap{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 25vw;
+          font-size: 5px;
+          color: white;
+          margin-top: 8px;
+        }
+      }
+
+      .login-btn{
+        background: url(../../../imgs/lizong/login-btn.png) no-repeat;
+        background-size: 100% 100%;
+        width: 9vw;
+        color: white;
+        letter-spacing: 5px;
+        height: 6vh;
+        text-align: center;
+        line-height: 6vh;
+        bottom: 30px;
+        position: absolute;
+      }
+    }
+  }
+}
